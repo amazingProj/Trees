@@ -34,17 +34,27 @@ class Tree
 
 		~Tree()
 		{
-			deleteAllTree(root);
+			deleteAllSubTree(root);
 			delete root;
 		}
 
-		void deleteAllTree(Node* t);
+		Node* getRoot()
+		{
+			return root;
+		}
+
+		void setRoot(Node* _root)
+		{
+			root = _root;
+		}
+
+		void deleteAllSubTree(Node* t);
 
 		void addRoot(string newval);
 
 		void addSon(string father, string newval);
 
-		Node* search(Node* p, string val);
+		Node* SubTreeSearch(Node* p, string val);
 
 		bool searchAndPrint(Node* p, string val);
 
@@ -58,7 +68,7 @@ class Tree
 		}
 		void searchAndPrintArea(string val)
 		{
-			Node* area = search(root, val);
+			Node* area = SubTreeSearch(root, val);
 			if (area) print(root);
 		}
 
@@ -78,7 +88,7 @@ class Tree
 
 		void printLeavesSubtree(string val)
 		{
-			Node* t = search(root, val);
+			Node* t = SubTreeSearch(root, val);
 			if (t)
 			{
 				printLeaves(t);
@@ -87,10 +97,10 @@ class Tree
 
 		void deleteSubTree(string val)
 		{
-			Node* t = search(root, val);
+			Node* t = SubTreeSearch(root, val);
 			if (t)
 			{
-				deleteAllTree(t);
+				deleteAllSubTree(t);
 			}
 		}
 };
