@@ -1,79 +1,65 @@
 #include "Tree.h"
 
-class SingletonTree
+Tree::Tree()
 {
-private:
-	/* Here will be the instance stored. */
-	static SingletonTree* instance;
-	Tree tree;
-	/* Private constructor to prevent instancing. */
-	SingletonTree();
-
-public:
-	/* Static access method. */
-	static SingletonTree* getInstance();
-	Tree getTree()
-	{
-		return tree;
-	}
-};
-
-/* Null, because instance will be initialized on demand. */
-SingletonTree* SingletonTree::instance = 0;
-
-SingletonTree* SingletonTree::getInstance()
-{
-	if (instance == 0)
-	{
-		instance = new SingletonTree();
-	}
-
-	return instance;
+	root = NULL;
 }
 
-SingletonTree::SingletonTree()
+Tree::~Tree()
 {
-	tree = Tree();
+	deleteAllSubTree(this->getRoot());
 }
 
-void Tree::printLeaves(Node* t)
+void Tree::setRoot(Node *_root)
 {
-	if (t == NULL)
+	root = _root;
+}
+
+Node* Tree::getRoot()
+{
+	return root;
+}
+/// <summary>
+/// 
+/// </summary>
+/// <param name="t"></param>
+void Tree::printLeaves(Node* subTree)
+{
+	if (subTree == NULL)
 	{
 		return;
 	}
-	if (t->sons.empty())
+	list<Node*>* pNodes = subTree->getSons();
+	if (pNodes->empty())
 	{
-		cout << t->value << "\t";
+		cout << subTree->getValue() << "\t";
 	}
 	std::list<Node *>::iterator it;
-	for (it = t->sons.begin(); it != t->sons.end(); ++it) 
+	for (it = pNodes->begin(); it != pNodes->end(); ++it) 
 	{
 		printLeaves(*it);
 	}
+	//delete pNodes;
 }
 
-void Tree::deleteAllSubTree(Node* t)
+void Tree::deleteAllSubTree(Node *subRoot)
 {
-	if (t == NULL)
+	if (this->getRoot()->getSons()->empty())
 	{
 		return;
 	}
-	if (t->sons.empty())
-	{
-		return;
-	}
+	list<Node*>* pNodes = subRoot->getSons();
 	std::list<Node*>::iterator it;
-	for (it = t->sons.begin(); it != t->sons.end(); ++it)
+	for (it = pNodes->begin(); it != pNodes->end(); ++it)
 	{
 		deleteAllSubTree(*it);
 	}
-	std::list<Node*>::iterator it;
-	for (it = t->sons.begin(); it != t->sons.end(); ++it)
+	std::list<Node*>::iterator iter;
+	for (iter = pNodes->begin(); iter != pNodes->end(); ++iter)
 	{
-		delete *it;
+		delete *iter;
 	}
-	delete t;
+	subRoot = nullptr;
 }
 
 void Tree::addRoot(string newval)
@@ -82,30 +68,32 @@ void Tree::addRoot(string newval)
 	{
 		return;
 	}
-	SingletonTree* singletonTree = SingletonTree::getInstance();
-	Tree tree = singletonTree->getTree();
-	Node newRoot = Node(newval);
-	newRoot.sons.push_back(tree.getRoot());
-	tree.setRoot(&newRoot);
+	Node *newRoot = new Node(newval);
+	newRoot->addSon(this->getRoot());
+	this->setRoot(newRoot);
 }
 
 void Tree::addSon(string father, string newval)
 {
-	
+	if (father.empty() || newval.empty())
+	{
+		return;
+	}
 }
 
-Node* Tree::SubTreeSearch(Node* p, string val)
+Node* Tree::SubTreeSearch(Node* node, string val)
 {
-	if (p == NULL)
+	if (node == NULL)
 	{
 		return nullptr;
 	}
-	if (p->value == val)
+	if (node->getValue() == val)
 	{
-		return p;
+		return node;
 	}
+	list<Node*>* pNodes = node->getSons();
 	std::list<Node*>::iterator it;
-	for (it = p->sons.begin(); it != p->sons.end(); ++it)
+	for (it = pNodes->begin(); it != pNodes->end(); ++it)
 	{
 		SubTreeSearch(*it, val);
 	}
@@ -117,20 +105,33 @@ bool Tree::searchAndPrint(Node* p, string val)
 	return false;
 }
 
-void Tree::print(Node* p, int level)
+void Tree::print(Node* node, int level)
 {
-	if (p == NULL)
+	if (node == NULL)
 	{
 		return;
 	}
-	if (level == 0)
+	if (level == 0 || )
 	{
 		return;
 	}
-	cout << p->value;
-	std::list<Node*>::iterator it;
-	for (it = p->sons.begin(); it != p->sons.end(); ++it)
+	cout << node->getValue() << "\n";
+	if (node->getSonsList().back() == NULL)
 	{
-		print(*it, level - 1);
+		return;
+	}
+	list<Node*> nodes = node->getSonsList();
+	if (nodes.back() == NULL)
+	{
+		return;
+	}
+	list<Node*>::iterator it;
+	
+	for (it = nodes.begin();; it != nodes.end(); ++it)
+	{
+		if (*it)
+		{
+			print(*it, level - 1);
+		}
 	}
 }

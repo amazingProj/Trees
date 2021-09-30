@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['tree_16',['Tree',['../class_tree.html',1,'Tree'],['../class_tree.html#ad376a7c639d857312f5de2ef47482f68',1,'Tree::Tree()']]],
-  ['tree_2ecpp_17',['Tree.cpp',['../_tree_8cpp.html',1,'']]],
-  ['tree_2eh_18',['Tree.h',['../_tree_8h.html',1,'']]]
+  ['searchandprint_13',['searchAndPrint',['../class_tree.html#ade43bb2ac1b55de7d69e2ad32bca2567',1,'Tree::searchAndPrint(Node *p, string val)'],['../class_tree.html#af128319c917bd7c18ef14d42f809cbd7',1,'Tree::searchAndPrint(string val)']]],
+  ['searchandprintarea_14',['searchAndPrintArea',['../class_tree.html#a60ebae49348aa77a0082d907b2c3b886',1,'Tree']]],
+  ['setroot_15',['setRoot',['../class_tree.html#a37f12f0a53b2e76b003bec9d10b62c29',1,'Tree']]],
+  ['subtreesearch_16',['SubTreeSearch',['../class_tree.html#adf03b72d3f325b4ba49153b6f2aeba47',1,'Tree']]]
 ];

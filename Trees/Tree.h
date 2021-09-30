@@ -1,21 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <list>
-#include <string>
+#include "Node.h"
 
-using namespace std;
-
-struct Node
-{
-	list<Node*> sons;
-	string value;
-
-	Node(string v) 
-	{
-		value = v; 
-	}
-};
 /**
   *@brief class represents a tree with single root and many sons of each node
   */
@@ -27,28 +14,15 @@ class Tree
 		  *@brief c'ctor of tree
 		  * constructs a tree and root equals to NULL
 		  */
-		Tree()
-		{
-			root = NULL;
-		}
+		Tree();
 
-		~Tree()
-		{
-			deleteAllSubTree(root);
-			delete root;
-		}
+		~Tree();
 
-		Node* getRoot()
-		{
-			return root;
-		}
+		Node* getRoot();
 
-		void setRoot(Node* _root)
-		{
-			root = _root;
-		}
+		void setRoot(Node* _root);
 
-		void deleteAllSubTree(Node* t);
+		void deleteAllSubTree(Node*);
 
 		void addRoot(string newval);
 
@@ -102,5 +76,16 @@ class Tree
 			{
 				deleteAllSubTree(t);
 			}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns>
+		/// 
+		/// </returns>
+		Node* setRandomTree()
+		{
+			Node* newRoot;
+			return newRoot;
 		}
 };

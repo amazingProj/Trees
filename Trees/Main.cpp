@@ -6,8 +6,8 @@
 
 int main(void)
 {
-	Tree t;
-	string val, father;
+	Tree tree;
+	string val;
 	char ch;
 
 	do
@@ -20,13 +20,18 @@ int main(void)
 		switch (ch)
 		{
 			case 'n':
-				  cout << "enter value of country "; cin >> val; t.addRoot(val); break;
+				  cout << "enter value\t";
+				  cin >> val;
+				  tree.addRoot(val);
+				  break;
 			case 'e':
-				  cout << "bye "; 
+				  cout << "bye " << "\n";
 				  break;
 			default: 
 				  cout << "error ";  
 				  break;
 		}
 	} while (ch != 'e');
+	tree.print(tree.getRoot(), 4);
+	return 1;
 }

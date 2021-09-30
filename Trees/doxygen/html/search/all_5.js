@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['search_12',['search',['../class_tree.html#a9c9b0901eb2bd582fb797df9db9e09bc',1,'Tree']]],
-  ['searchandprint_13',['searchAndPrint',['../class_tree.html#ade43bb2ac1b55de7d69e2ad32bca2567',1,'Tree::searchAndPrint(Node *p, string val)'],['../class_tree.html#af128319c917bd7c18ef14d42f809cbd7',1,'Tree::searchAndPrint(string val)']]],
-  ['searchandprintarea_14',['searchAndPrintArea',['../class_tree.html#a60ebae49348aa77a0082d907b2c3b886',1,'Tree']]],
-  ['sons_15',['sons',['../struct_node.html#a7c03cdbabebd536248da14ddaa972602',1,'Node']]]
+  ['print_8',['print',['../class_tree.html#ab1a6106f58bbac6aa8187ce826a0edf8',1,'Tree']]],
+  ['printallleaves_9',['printAllLeaves',['../class_tree.html#a8b17b197c162b703938fce964e523770',1,'Tree']]],
+  ['printalltree_10',['printAllTree',['../class_tree.html#a610caf5b3f97c888e3c31c4316d21c19',1,'Tree']]],
+  ['printleaves_11',['printLeaves',['../class_tree.html#aa44d0ca1c9309a9a28dc11b31ca8e8d8',1,'Tree']]],
+  ['printleavessubtree_12',['printLeavesSubtree',['../class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7',1,'Tree']]]
 ];

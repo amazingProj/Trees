@@ -73,100 +73,112 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_node.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_node.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_node.html">Node</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_node.html#a7c03cdbabebd536248da14ddaa972602">   11</a></span>&#160;    list&lt;Node*&gt; <a class="code" href="struct_node.html#a7c03cdbabebd536248da14ddaa972602">sons</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_node.html#afbfe6bbcc5e6d53bb23ff4c29c178596">   12</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="struct_node.html#afbfe6bbcc5e6d53bb23ff4c29c178596">value</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_node.html#a1b83dc8df1559ea9363dbe35e3c4eb2c">   14</a></span>&#160;    <a class="code" href="struct_node.html#a1b83dc8df1559ea9363dbe35e3c4eb2c">Node</a>(<span class="keywordtype">string</span> v) </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        value = v; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_tree.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tree.html">Tree</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="struct_node.html">Node</a>* root;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">   26</a></span>&#160;        <a class="code" href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">Tree</a>()</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            root = NULL;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">   31</a></span>&#160;        <a class="code" href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">~Tree</a>()</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            deleteAllTree(root);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">delete</span> root;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> deleteAllTree(<a class="code" href="struct_node.html">Node</a>* t);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> addRoot(<span class="keywordtype">string</span> newval);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> addSon(<span class="keywordtype">string</span> father, <span class="keywordtype">string</span> newval);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="struct_node.html">Node</a>* search(<a class="code" href="struct_node.html">Node</a>* p, <span class="keywordtype">string</span> val);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> searchAndPrint(<a class="code" href="struct_node.html">Node</a>* p, <span class="keywordtype">string</span> val);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">   47</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">searchAndPrint</a>(<span class="keywordtype">string</span> val)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span> (!searchAndPrint(root, val))</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Value not found&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">   55</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">searchAndPrintArea</a>(<span class="keywordtype">string</span> val)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="struct_node.html">Node</a>* area = search(root, val);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (area) print(root);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> print(<a class="code" href="struct_node.html">Node</a>* p, <span class="keywordtype">int</span> level = 0);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">   63</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">printAllTree</a>()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            print(root);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_tree.html#a8b17b197c162b703938fce964e523770">   67</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a8b17b197c162b703938fce964e523770">printAllLeaves</a>()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;leaves:&quot;</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            printLeaves(root); cout &lt;&lt; endl;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> printLeaves(<a class="code" href="struct_node.html">Node</a>* t);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">   75</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">printLeavesSubtree</a>(<span class="keywordtype">string</span> val)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="struct_node.html">Node</a>* t = search(root, val);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (t)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                printLeaves(t);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">   84</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">deleteSubTree</a>(<span class="keywordtype">string</span> val)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="struct_node.html">Node</a>* t = search(root, val);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> (t)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                deleteAllTree(t);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="ttc" id="aclass_tree_html"><div class="ttname"><a href="class_tree.html">Tree</a></div><div class="ttdoc">class represents a tree with single root and many sons of each node</div><div class="ttdef"><b>Definition:</b> Tree.h:23</div></div>
-<div class="ttc" id="aclass_tree_html_a60ebae49348aa77a0082d907b2c3b886"><div class="ttname"><a href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">Tree::searchAndPrintArea</a></div><div class="ttdeci">void searchAndPrintArea(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:55</div></div>
-<div class="ttc" id="aclass_tree_html_a610caf5b3f97c888e3c31c4316d21c19"><div class="ttname"><a href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">Tree::printAllTree</a></div><div class="ttdeci">void printAllTree()</div><div class="ttdef"><b>Definition:</b> Tree.h:63</div></div>
-<div class="ttc" id="aclass_tree_html_a8b17b197c162b703938fce964e523770"><div class="ttname"><a href="class_tree.html#a8b17b197c162b703938fce964e523770">Tree::printAllLeaves</a></div><div class="ttdeci">void printAllLeaves()</div><div class="ttdef"><b>Definition:</b> Tree.h:67</div></div>
-<div class="ttc" id="aclass_tree_html_aaa6a2c8e04437042be81e5a9460ee1d7"><div class="ttname"><a href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">Tree::printLeavesSubtree</a></div><div class="ttdeci">void printLeavesSubtree(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:75</div></div>
-<div class="ttc" id="aclass_tree_html_abdc38545cf3f588725b5d8b8075b3866"><div class="ttname"><a href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">Tree::~Tree</a></div><div class="ttdeci">~Tree()</div><div class="ttdef"><b>Definition:</b> Tree.h:31</div></div>
-<div class="ttc" id="aclass_tree_html_ac9963b1916f8b4befebc1949696268a3"><div class="ttname"><a href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">Tree::deleteSubTree</a></div><div class="ttdeci">void deleteSubTree(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:84</div></div>
-<div class="ttc" id="aclass_tree_html_ad376a7c639d857312f5de2ef47482f68"><div class="ttname"><a href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">Tree::Tree</a></div><div class="ttdeci">Tree()</div><div class="ttdef"><b>Definition:</b> Tree.h:26</div></div>
-<div class="ttc" id="aclass_tree_html_af128319c917bd7c18ef14d42f809cbd7"><div class="ttname"><a href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">Tree::searchAndPrint</a></div><div class="ttdeci">void searchAndPrint(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:47</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Tree.h:10</div></div>
-<div class="ttc" id="astruct_node_html_a1b83dc8df1559ea9363dbe35e3c4eb2c"><div class="ttname"><a href="struct_node.html#a1b83dc8df1559ea9363dbe35e3c4eb2c">Node::Node</a></div><div class="ttdeci">Node(string v)</div><div class="ttdef"><b>Definition:</b> Tree.h:14</div></div>
-<div class="ttc" id="astruct_node_html_a7c03cdbabebd536248da14ddaa972602"><div class="ttname"><a href="struct_node.html#a7c03cdbabebd536248da14ddaa972602">Node::sons</a></div><div class="ttdeci">list&lt; Node * &gt; sons</div><div class="ttdef"><b>Definition:</b> Tree.h:11</div></div>
-<div class="ttc" id="astruct_node_html_afbfe6bbcc5e6d53bb23ff4c29c178596"><div class="ttname"><a href="struct_node.html#afbfe6bbcc5e6d53bb23ff4c29c178596">Node::value</a></div><div class="ttdeci">string value</div><div class="ttdef"><b>Definition:</b> Tree.h:12</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    list&lt;Node*&gt; sons;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">string</span> value;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_node.html">Node</a>(<span class="keywordtype">string</span> v) </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        value = v; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_node.html">Node</a>()</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_tree.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tree.html">Tree</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_node.html">Node</a>* root;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">   44</a></span>&#160;        <a class="code" href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">Tree</a>()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            root = NULL;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">   49</a></span>&#160;        <a class="code" href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">~Tree</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            deleteAllTree(root);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_tree.html#a34ace6b8eb8a67d8246ece6a04bf6344">   54</a></span>&#160;        <a class="code" href="class_node.html">Node</a>* <a class="code" href="class_tree.html#a34ace6b8eb8a67d8246ece6a04bf6344">getRoot</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> root;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_tree.html#a37f12f0a53b2e76b003bec9d10b62c29">   59</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a37f12f0a53b2e76b003bec9d10b62c29">setRoot</a>(<a class="code" href="class_node.html">Node</a>* _root)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            root = _root;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> deleteAllTree(<a class="code" href="class_node.html">Node</a>* t);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> addRoot(<span class="keywordtype">string</span> newval);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> addSon(<span class="keywordtype">string</span> father, <span class="keywordtype">string</span> newval);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_node.html">Node</a>* SubTreeSearch(<a class="code" href="class_node.html">Node</a>* p, <span class="keywordtype">string</span> val);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> searchAndPrint(<a class="code" href="class_node.html">Node</a>* p, <span class="keywordtype">string</span> val);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">   74</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">searchAndPrint</a>(<span class="keywordtype">string</span> val)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (!searchAndPrint(root, val))</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Value not found&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">   82</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">searchAndPrintArea</a>(<span class="keywordtype">string</span> val)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="class_node.html">Node</a>* area = SubTreeSearch(root, val);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (area) print(root);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> print(<a class="code" href="class_node.html">Node</a>* p, <span class="keywordtype">int</span> level = 0);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">   90</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">printAllTree</a>()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            print(root);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_tree.html#a8b17b197c162b703938fce964e523770">   94</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#a8b17b197c162b703938fce964e523770">printAllLeaves</a>()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;leaves:&quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            printLeaves(root); cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> printLeaves(<a class="code" href="class_node.html">Node</a>* t);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">  102</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">printLeavesSubtree</a>(<span class="keywordtype">string</span> val)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="class_node.html">Node</a>* t = SubTreeSearch(root, val);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">if</span> (t)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                printLeaves(t);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">  111</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">deleteSubTree</a>(<span class="keywordtype">string</span> val)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="class_node.html">Node</a>* t = SubTreeSearch(root, val);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (t)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                deleteAllTree(t);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Tree.h:10</div></div>
+<div class="ttc" id="aclass_tree_html"><div class="ttname"><a href="class_tree.html">Tree</a></div><div class="ttdoc">need to add documentation first.</div><div class="ttdef"><b>Definition:</b> Tree.h:37</div></div>
+<div class="ttc" id="aclass_tree_html_a34ace6b8eb8a67d8246ece6a04bf6344"><div class="ttname"><a href="class_tree.html#a34ace6b8eb8a67d8246ece6a04bf6344">Tree::getRoot</a></div><div class="ttdeci">Node * getRoot()</div><div class="ttdef"><b>Definition:</b> Tree.h:54</div></div>
+<div class="ttc" id="aclass_tree_html_a37f12f0a53b2e76b003bec9d10b62c29"><div class="ttname"><a href="class_tree.html#a37f12f0a53b2e76b003bec9d10b62c29">Tree::setRoot</a></div><div class="ttdeci">void setRoot(Node *_root)</div><div class="ttdef"><b>Definition:</b> Tree.h:59</div></div>
+<div class="ttc" id="aclass_tree_html_a60ebae49348aa77a0082d907b2c3b886"><div class="ttname"><a href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">Tree::searchAndPrintArea</a></div><div class="ttdeci">void searchAndPrintArea(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:82</div></div>
+<div class="ttc" id="aclass_tree_html_a610caf5b3f97c888e3c31c4316d21c19"><div class="ttname"><a href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">Tree::printAllTree</a></div><div class="ttdeci">void printAllTree()</div><div class="ttdef"><b>Definition:</b> Tree.h:90</div></div>
+<div class="ttc" id="aclass_tree_html_a8b17b197c162b703938fce964e523770"><div class="ttname"><a href="class_tree.html#a8b17b197c162b703938fce964e523770">Tree::printAllLeaves</a></div><div class="ttdeci">void printAllLeaves()</div><div class="ttdef"><b>Definition:</b> Tree.h:94</div></div>
+<div class="ttc" id="aclass_tree_html_aaa6a2c8e04437042be81e5a9460ee1d7"><div class="ttname"><a href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">Tree::printLeavesSubtree</a></div><div class="ttdeci">void printLeavesSubtree(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:102</div></div>
+<div class="ttc" id="aclass_tree_html_abdc38545cf3f588725b5d8b8075b3866"><div class="ttname"><a href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">Tree::~Tree</a></div><div class="ttdeci">~Tree()</div><div class="ttdef"><b>Definition:</b> Tree.h:49</div></div>
+<div class="ttc" id="aclass_tree_html_ac9963b1916f8b4befebc1949696268a3"><div class="ttname"><a href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">Tree::deleteSubTree</a></div><div class="ttdeci">void deleteSubTree(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:111</div></div>
+<div class="ttc" id="aclass_tree_html_ad376a7c639d857312f5de2ef47482f68"><div class="ttname"><a href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">Tree::Tree</a></div><div class="ttdeci">Tree()</div><div class="ttdoc">c'ctor of tree constructs a tree and root equals to NULL</div><div class="ttdef"><b>Definition:</b> Tree.h:44</div></div>
+<div class="ttc" id="aclass_tree_html_af128319c917bd7c18ef14d42f809cbd7"><div class="ttname"><a href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">Tree::searchAndPrint</a></div><div class="ttdeci">void searchAndPrint(string val)</div><div class="ttdef"><b>Definition:</b> Tree.h:74</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
