@@ -2,7 +2,7 @@
 \label{class_tree}\index{Tree@{Tree}}
 
 
-need to add documentation first.  
+class represents a tree with single root and many sons of each node  
 
 
 
@@ -15,42 +15,36 @@ need to add documentation first.
 \mbox{\hyperlink{class_tree_ad376a7c639d857312f5de2ef47482f68}{Tree}} ()
 \begin{DoxyCompactList}\small\item\em c\textquotesingle{}ctor of tree constructs a tree and root equals to NULL \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_tree_abdc38545cf3f588725b5d8b8075b3866}{$\sim$\+Tree}} ()
-\item 
-\mbox{\hyperlink{class_node}{Node}} $\ast$ \mbox{\hyperlink{class_tree_a34ace6b8eb8a67d8246ece6a04bf6344}{get\+Root}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em d\textquotesingle{}ctor of tree destruct a tree \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} $\ast$ \mbox{\hyperlink{class_tree_ab33a62906a5bc78fcac7d4f8748e653e}{get\+Root}} ()
+\begin{DoxyCompactList}\small\item\em getter of tree root \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tree_a37f12f0a53b2e76b003bec9d10b62c29}{set\+Root}} (\mbox{\hyperlink{class_node}{Node}} $\ast$\+\_\+root)
-\item 
-void \mbox{\hyperlink{class_tree_a1c39cbc4af7fdb831a97530a32ef970b}{delete\+All\+Tree}} (\mbox{\hyperlink{class_node}{Node}} $\ast$t)
-\item 
-void \mbox{\hyperlink{class_tree_abca687e26ab7da0bacc7e9398de2e8ee}{add\+Root}} (string newval)
-\item 
+\begin{DoxyCompactList}\small\item\em setter of root \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_aed0f4e09e6e52ea10fec53f34b4bba66}{delete\+All\+Sub\+Tree}} (\mbox{\hyperlink{class_node}{Node}} $\ast$)
+\begin{DoxyCompactList}\small\item\em deletes all nodes in a sub tree \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_ae439632489b646e3a4785b2811a3f5b8}{set\+Root}} (string newval)
+\begin{DoxyCompactList}\small\item\em sets a root by a value \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tree_aa2ad22f72da3721c6693c176ff1af477}{add\+Son}} (string father, string newval)
-\item 
+\begin{DoxyCompactList}\small\item\em adds a son to a tree \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_node}{Node}} $\ast$ \mbox{\hyperlink{class_tree_adf03b72d3f325b4ba49153b6f2aeba47}{Sub\+Tree\+Search}} (\mbox{\hyperlink{class_node}{Node}} $\ast$p, string val)
-\item 
-bool \mbox{\hyperlink{class_tree_ade43bb2ac1b55de7d69e2ad32bca2567}{search\+And\+Print}} (\mbox{\hyperlink{class_node}{Node}} $\ast$p, string val)
-\item 
-void \mbox{\hyperlink{class_tree_af128319c917bd7c18ef14d42f809cbd7}{search\+And\+Print}} (string val)
-\item 
-void \mbox{\hyperlink{class_tree_a60ebae49348aa77a0082d907b2c3b886}{search\+And\+Print\+Area}} (string val)
-\item 
-void \mbox{\hyperlink{class_tree_ab1a6106f58bbac6aa8187ce826a0edf8}{print}} (\mbox{\hyperlink{class_node}{Node}} $\ast$p, int level=0)
-\item 
+\begin{DoxyCompactList}\small\item\em searches a value in a subtree \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tree_a97b3909d5c578261c9b439d01b27ca93}{print\+To\+Screen\+Search}} (\mbox{\hyperlink{class_node}{Node}} $\ast$subtree, string val)
+\begin{DoxyCompactList}\small\item\em search \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_acd955fc90bce7d0299564cb11a16ce5a}{print}} (\mbox{\hyperlink{class_node}{Node}} $\ast$p, int level)
+\begin{DoxyCompactList}\small\item\em prints subtree and dpeth level \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tree_a610caf5b3f97c888e3c31c4316d21c19}{print\+All\+Tree}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em prints all the tree \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tree_a8b17b197c162b703938fce964e523770}{print\+All\+Leaves}} ()
-\item 
-void \mbox{\hyperlink{class_tree_aa44d0ca1c9309a9a28dc11b31ca8e8d8}{print\+Leaves}} (\mbox{\hyperlink{class_node}{Node}} $\ast$t)
-\item 
+\begin{DoxyCompactList}\small\item\em prints all the leaves \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_a20ceebd7eb990c22d23a4c33c2909b0c}{print\+Leaves\+New}} (\mbox{\hyperlink{class_node}{Node}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em prints all leaves in the subtree \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tree_aaa6a2c8e04437042be81e5a9460ee1d7}{print\+Leaves\+Subtree}} (string val)
-\item 
+\begin{DoxyCompactList}\small\item\em prints all leaves with the specific value \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tree_ac9963b1916f8b4befebc1949696268a3}{delete\+Sub\+Tree}} (string val)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em deletes all subtrees with the specific value in the tree \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-need to add documentation first. 
-
 class represents a tree with single root and many sons of each node 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -58,7 +52,7 @@ class represents a tree with single root and many sons of each node
 \index{Tree@{Tree}!Tree@{Tree}}
 \index{Tree@{Tree}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{Tree()}{Tree()}}
-{\footnotesize\ttfamily Tree\+::\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Tree\+::\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -68,101 +62,207 @@ c\textquotesingle{}ctor of tree constructs a tree and root equals to NULL
 \index{Tree@{Tree}!````~Tree@{$\sim$Tree}}
 \index{````~Tree@{$\sim$Tree}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{$\sim$Tree()}{~Tree()}}
-{\footnotesize\ttfamily Tree\+::$\sim$\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Tree\+::$\sim$\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+d\textquotesingle{}ctor of tree destruct a tree 
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_tree_abca687e26ab7da0bacc7e9398de2e8ee}\label{class_tree_abca687e26ab7da0bacc7e9398de2e8ee}} 
-\index{Tree@{Tree}!addRoot@{addRoot}}
-\index{addRoot@{addRoot}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{addRoot()}{addRoot()}}
-{\footnotesize\ttfamily void Tree\+::add\+Root (\begin{DoxyParamCaption}\item[{string}]{newval }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{class_tree_aa2ad22f72da3721c6693c176ff1af477}\label{class_tree_aa2ad22f72da3721c6693c176ff1af477}} 
 \index{Tree@{Tree}!addSon@{addSon}}
 \index{addSon@{addSon}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{addSon()}{addSon()}}
 {\footnotesize\ttfamily void Tree\+::add\+Son (\begin{DoxyParamCaption}\item[{string}]{father,  }\item[{string}]{newval }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_a1c39cbc4af7fdb831a97530a32ef970b}\label{class_tree_a1c39cbc4af7fdb831a97530a32ef970b}} 
-\index{Tree@{Tree}!deleteAllTree@{deleteAllTree}}
-\index{deleteAllTree@{deleteAllTree}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{deleteAllTree()}{deleteAllTree()}}
-{\footnotesize\ttfamily void Tree\+::delete\+All\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{t }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_ac9963b1916f8b4befebc1949696268a3}\label{class_tree_ac9963b1916f8b4befebc1949696268a3}} 
+
+adds a son to a tree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em father} & the value of the father\\
+\hline
+{\em newval} & the new son value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tree_aed0f4e09e6e52ea10fec53f34b4bba66}\label{class_tree_aed0f4e09e6e52ea10fec53f34b4bba66}} 
+\index{Tree@{Tree}!deleteAllSubTree@{deleteAllSubTree}}
+\index{deleteAllSubTree@{deleteAllSubTree}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{deleteAllSubTree()}{deleteAllSubTree()}}
+{\footnotesize\ttfamily void Tree\+::delete\+All\+Sub\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{sub\+Root }\end{DoxyParamCaption})}
+
+
+
+deletes all nodes in a sub tree 
+
+a subtree node\mbox{\Hypertarget{class_tree_ac9963b1916f8b4befebc1949696268a3}\label{class_tree_ac9963b1916f8b4befebc1949696268a3}} 
 \index{Tree@{Tree}!deleteSubTree@{deleteSubTree}}
 \index{deleteSubTree@{deleteSubTree}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{deleteSubTree()}{deleteSubTree()}}
-{\footnotesize\ttfamily void Tree\+::delete\+Sub\+Tree (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Tree\+::delete\+Sub\+Tree (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_a34ace6b8eb8a67d8246ece6a04bf6344}\label{class_tree_a34ace6b8eb8a67d8246ece6a04bf6344}} 
+
+
+deletes all subtrees with the specific value in the tree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & a value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tree_ab33a62906a5bc78fcac7d4f8748e653e}\label{class_tree_ab33a62906a5bc78fcac7d4f8748e653e}} 
 \index{Tree@{Tree}!getRoot@{getRoot}}
 \index{getRoot@{getRoot}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}}$\ast$ Tree\+::get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}} $\ast$ Tree\+::get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_ab1a6106f58bbac6aa8187ce826a0edf8}\label{class_tree_ab1a6106f58bbac6aa8187ce826a0edf8}} 
+
+
+getter of tree root 
+
+\begin{DoxyReturn}{Returns}
+a root node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tree_acd955fc90bce7d0299564cb11a16ce5a}\label{class_tree_acd955fc90bce7d0299564cb11a16ce5a}} 
 \index{Tree@{Tree}!print@{print}}
 \index{print@{print}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
-{\footnotesize\ttfamily void Tree\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{p,  }\item[{int}]{level = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Tree\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{p,  }\item[{int}]{level }\end{DoxyParamCaption})}
 
+
+
+prints subtree and dpeth level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a subtree node\\
+\hline
+{\em level} & a depth level\\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_tree_a8b17b197c162b703938fce964e523770}\label{class_tree_a8b17b197c162b703938fce964e523770}} 
 \index{Tree@{Tree}!printAllLeaves@{printAllLeaves}}
 \index{printAllLeaves@{printAllLeaves}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{printAllLeaves()}{printAllLeaves()}}
-{\footnotesize\ttfamily void Tree\+::print\+All\+Leaves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Tree\+::print\+All\+Leaves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints all the leaves 
 
 \mbox{\Hypertarget{class_tree_a610caf5b3f97c888e3c31c4316d21c19}\label{class_tree_a610caf5b3f97c888e3c31c4316d21c19}} 
 \index{Tree@{Tree}!printAllTree@{printAllTree}}
 \index{printAllTree@{printAllTree}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{printAllTree()}{printAllTree()}}
-{\footnotesize\ttfamily void Tree\+::print\+All\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Tree\+::print\+All\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_aa44d0ca1c9309a9a28dc11b31ca8e8d8}\label{class_tree_aa44d0ca1c9309a9a28dc11b31ca8e8d8}} 
-\index{Tree@{Tree}!printLeaves@{printLeaves}}
-\index{printLeaves@{printLeaves}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{printLeaves()}{printLeaves()}}
-{\footnotesize\ttfamily void Tree\+::print\+Leaves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{t }\end{DoxyParamCaption})}
 
+
+prints all the tree 
+
+\mbox{\Hypertarget{class_tree_a20ceebd7eb990c22d23a4c33c2909b0c}\label{class_tree_a20ceebd7eb990c22d23a4c33c2909b0c}} 
+\index{Tree@{Tree}!printLeavesNew@{printLeavesNew}}
+\index{printLeavesNew@{printLeavesNew}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{printLeavesNew()}{printLeavesNew()}}
+{\footnotesize\ttfamily void Tree\+::print\+Leaves\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+prints all leaves in the subtree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & a subtree\\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_tree_aaa6a2c8e04437042be81e5a9460ee1d7}\label{class_tree_aaa6a2c8e04437042be81e5a9460ee1d7}} 
 \index{Tree@{Tree}!printLeavesSubtree@{printLeavesSubtree}}
 \index{printLeavesSubtree@{printLeavesSubtree}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{printLeavesSubtree()}{printLeavesSubtree()}}
-{\footnotesize\ttfamily void Tree\+::print\+Leaves\+Subtree (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Tree\+::print\+Leaves\+Subtree (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_ade43bb2ac1b55de7d69e2ad32bca2567}\label{class_tree_ade43bb2ac1b55de7d69e2ad32bca2567}} 
-\index{Tree@{Tree}!searchAndPrint@{searchAndPrint}}
-\index{searchAndPrint@{searchAndPrint}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{searchAndPrint()}{searchAndPrint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool Tree\+::search\+And\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{p,  }\item[{string}]{val }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_tree_af128319c917bd7c18ef14d42f809cbd7}\label{class_tree_af128319c917bd7c18ef14d42f809cbd7}} 
-\index{Tree@{Tree}!searchAndPrint@{searchAndPrint}}
-\index{searchAndPrint@{searchAndPrint}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{searchAndPrint()}{searchAndPrint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Tree\+::search\+And\+Print (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_tree_a60ebae49348aa77a0082d907b2c3b886}\label{class_tree_a60ebae49348aa77a0082d907b2c3b886}} 
-\index{Tree@{Tree}!searchAndPrintArea@{searchAndPrintArea}}
-\index{searchAndPrintArea@{searchAndPrintArea}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{searchAndPrintArea()}{searchAndPrintArea()}}
-{\footnotesize\ttfamily void Tree\+::search\+And\+Print\+Area (\begin{DoxyParamCaption}\item[{string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+prints all leaves with the specific value 
 
+
+\begin{DoxyParams}{Parameters}
+{\em val} & a value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tree_a97b3909d5c578261c9b439d01b27ca93}\label{class_tree_a97b3909d5c578261c9b439d01b27ca93}} 
+\index{Tree@{Tree}!printToScreenSearch@{printToScreenSearch}}
+\index{printToScreenSearch@{printToScreenSearch}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{printToScreenSearch()}{printToScreenSearch()}}
+{\footnotesize\ttfamily bool Tree\+::print\+To\+Screen\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{subtree,  }\item[{string}]{val }\end{DoxyParamCaption})}
+
+
+
+search 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subtree} & a sub tree\\
+\hline
+{\em val} & a value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if value was not found then false otherwise true
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_tree_a37f12f0a53b2e76b003bec9d10b62c29}\label{class_tree_a37f12f0a53b2e76b003bec9d10b62c29}} 
 \index{Tree@{Tree}!setRoot@{setRoot}}
 \index{setRoot@{setRoot}!Tree@{Tree}}
-\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}}
-{\footnotesize\ttfamily void Tree\+::set\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{\+\_\+root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Tree\+::set\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{\+\_\+root }\end{DoxyParamCaption})}
 
+
+
+setter of root 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+root} & a new root node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tree_ae439632489b646e3a4785b2811a3f5b8}\label{class_tree_ae439632489b646e3a4785b2811a3f5b8}} 
+\index{Tree@{Tree}!setRoot@{setRoot}}
+\index{setRoot@{setRoot}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Tree\+::set\+Root (\begin{DoxyParamCaption}\item[{string}]{newval }\end{DoxyParamCaption})}
+
+
+
+sets a root by a value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newval} & a value\\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_tree_adf03b72d3f325b4ba49153b6f2aeba47}\label{class_tree_adf03b72d3f325b4ba49153b6f2aeba47}} 
 \index{Tree@{Tree}!SubTreeSearch@{SubTreeSearch}}
 \index{SubTreeSearch@{SubTreeSearch}!Tree@{Tree}}
 \doxysubsubsection{\texorpdfstring{SubTreeSearch()}{SubTreeSearch()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}} $\ast$ Tree\+::\+Sub\+Tree\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{p,  }\item[{string}]{val }\end{DoxyParamCaption})}
 
+
+
+searches a value in a subtree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a subtree node\\
+\hline
+{\em val} & a value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sub subtree with the specific value
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

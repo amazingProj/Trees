@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['deletealltree_28',['deleteAllTree',['../class_tree.html#a1c39cbc4af7fdb831a97530a32ef970b',1,'Tree']]],
-  ['deletesubtree_29',['deleteSubTree',['../class_tree.html#ac9963b1916f8b4befebc1949696268a3',1,'Tree']]]
+  ['deleteallsubtree_36',['deleteAllSubTree',['../class_tree.html#aed0f4e09e6e52ea10fec53f34b4bba66',1,'Tree']]],
+  ['deletesubtree_37',['deleteSubTree',['../class_tree.html#ac9963b1916f8b4befebc1949696268a3',1,'Tree']]]
 ];

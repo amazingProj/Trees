@@ -2,10 +2,111 @@
 \label{class_node}\index{Node@{Node}}
 
 
-{\ttfamily \#include $<$Tree.\+h$>$}
+class reprsents a node that points to zero to many other nodes  
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_tree_8h}{Tree.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_node_a1b83dc8df1559ea9363dbe35e3c4eb2c}{Node}} (string v)
+\begin{DoxyCompactList}\small\item\em constructs a leaf node by only value \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_node_ab9ecd62d3be2690af1feea7d3a8e1616}{get\+Value}} ()
+\item 
+list$<$ \mbox{\hyperlink{class_node}{Node}} $\ast$ $>$ \mbox{\hyperlink{class_node_a115b864f3f4fdc4d1ea45a5b61eabf59}{get\+Sons\+List}} ()
+\begin{DoxyCompactList}\small\item\em node\textquotesingle{}s sons getter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_a3eead699f575714147d0aced4bac8a0e}{add\+Son\+Value}} (string \+\_\+value)
+\begin{DoxyCompactList}\small\item\em adds a new son to node with a value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_ad82150618e9cc5165095752424ffb1c8}{add\+Son}} (\mbox{\hyperlink{class_node}{Node}} $\ast$\+\_\+node)
+\begin{DoxyCompactList}\small\item\em adds a new son to a node \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class reprsents a node that points to zero to many other nodes 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_node_a1b83dc8df1559ea9363dbe35e3c4eb2c}\label{class_node_a1b83dc8df1559ea9363dbe35e3c4eb2c}} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}\item[{string}]{v }\end{DoxyParamCaption})}
+
+
+
+constructs a leaf node by only value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a string \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_node_ad82150618e9cc5165095752424ffb1c8}\label{class_node_ad82150618e9cc5165095752424ffb1c8}} 
+\index{Node@{Node}!addSon@{addSon}}
+\index{addSon@{addSon}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{addSon()}{addSon()}}
+{\footnotesize\ttfamily void Node\+::add\+Son (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{\+\_\+node }\end{DoxyParamCaption})}
+
+
+
+adds a new son to a node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+node} & a pointer node\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_a3eead699f575714147d0aced4bac8a0e}\label{class_node_a3eead699f575714147d0aced4bac8a0e}} 
+\index{Node@{Node}!addSonValue@{addSonValue}}
+\index{addSonValue@{addSonValue}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{addSonValue()}{addSonValue()}}
+{\footnotesize\ttfamily void Node\+::add\+Son\+Value (\begin{DoxyParamCaption}\item[{string}]{\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+adds a new son to node with a value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+value} & a value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_a115b864f3f4fdc4d1ea45a5b61eabf59}\label{class_node_a115b864f3f4fdc4d1ea45a5b61eabf59}} 
+\index{Node@{Node}!getSonsList@{getSonsList}}
+\index{getSonsList@{getSonsList}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getSonsList()}{getSonsList()}}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{class_node}{Node}} $\ast$ $>$ Node\+::get\+Sons\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+node\textquotesingle{}s sons getter 
+
+\begin{DoxyReturn}{Returns}
+a list of pointer of sons nodes
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_ab9ecd62d3be2690af1feea7d3a8e1616}\label{class_node_ab9ecd62d3be2690af1feea7d3a8e1616}} 
+\index{Node@{Node}!getValue@{getValue}}
+\index{getValue@{getValue}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily string Node\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+a string of value of node 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_node_8h}{Node.\+h}}\item 
+\mbox{\hyperlink{_node_8cpp}{Node.\+cpp}}\end{DoxyCompactItemize}

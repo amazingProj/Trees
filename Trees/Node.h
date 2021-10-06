@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/// <summary>
+/// class reprsents a node that points to zero to many other nodes
+/// </summary>
 class Node
 {
 	list<Node*> sons;
@@ -15,40 +18,27 @@ public:
 	/// <param name="v">
 	/// a string
 	/// </param>
-	Node(string v)
-	{
-		value = v;
-	}
-	Node()
-	{
-		sons.push_back(NULL);
-	}
+	Node(string v);
 	/// <summary>
 	/// 
 	/// </summary>
 	/// <returns>
 	/// a string of value of node
 	/// </returns>
-	string getValue()
-	{
-		return value;
-	}
-	list<Node*>* getSons()
-	{
-		list<Node*>* pList = &sons;
-		return pList;
-	}
-	list<Node*> getSonsList()
-	{
-		return sons;
-	}
-	void addSon(string _value)
-	{
-		Node* newNode = new Node(_value);
-		sons.push_back(newNode);
-	}
-	void addSon(Node *_node)
-	{
-		sons.push_back(_node);
-	}
+	string getValue();
+	/// <summary>
+	/// node's sons getter
+	/// </summary>
+	/// <returns>a list of pointer of sons nodes</returns>
+	list<Node*> getSonsList();
+	/// <summary>
+	/// adds a new son to node with a value
+	/// </summary>
+	/// <param name="_value">a value</param>
+	void addSonValue(string _value);
+	/// <summary>
+	/// adds a new son to a node 
+	/// </summary>
+	/// <param name="_node">a pointer node</param>
+	void addSon(Node* _node);
 };

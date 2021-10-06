@@ -13,21 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Tests">
+      <UniqueIdentifier>{bd6adb0b-7750-47d5-801c-e557e8845856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Datastructures">
+      <UniqueIdentifier>{f97d70e6-c2ab-4ab4-8ca5-72e6dd16c567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures">
+      <UniqueIdentifier>{1716f006-ed02-4dca-8d3b-ee23d8e43453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Datastructures\Trees">
+      <UniqueIdentifier>{0f1fad5c-34f4-45f5-adbc-b19b67a02e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\Trees">
+      <UniqueIdentifier>{8778d95a-d47c-48be-b4d8-c856e05a43b9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Node.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Datastructures\Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>Header Files\Datastructures\Trees</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Datastructures\Trees</Filter>
     </ClCompile>
     <ClCompile Include="Tree.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Datastructures\Trees</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

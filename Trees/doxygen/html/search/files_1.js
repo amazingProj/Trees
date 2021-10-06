@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tree_2ecpp_24',['Tree.cpp',['../_tree_8cpp.html',1,'']]],
-  ['tree_2eh_25',['Tree.h',['../_tree_8h.html',1,'']]]
+  ['node_2ecpp_30',['Node.cpp',['../_node_8cpp.html',1,'']]],
+  ['node_2eh_31',['Node.h',['../_node_8h.html',1,'']]]
 ];

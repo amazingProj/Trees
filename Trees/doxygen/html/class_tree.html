@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>need to add documentation first.  
+<p>class represents a tree with single root and many sons of each node  
  <a href="class_tree.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_tree_8h_source.html">Tree.h</a>&gt;</code></p>
@@ -80,50 +80,56 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad376a7c639d857312f5de2ef47482f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">c'ctor of tree constructs a tree and root equals to NULL  <a href="class_tree.html#ad376a7c639d857312f5de2ef47482f68">More...</a><br /></td></tr>
 <tr class="separator:ad376a7c639d857312f5de2ef47482f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdc38545cf3f588725b5d8b8075b3866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">~Tree</a> ()</td></tr>
+<tr class="memdesc:abdc38545cf3f588725b5d8b8075b3866"><td class="mdescLeft">&#160;</td><td class="mdescRight">d'ctor of tree destruct a tree  <a href="class_tree.html#abdc38545cf3f588725b5d8b8075b3866">More...</a><br /></td></tr>
 <tr class="separator:abdc38545cf3f588725b5d8b8075b3866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ace6b8eb8a67d8246ece6a04bf6344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a34ace6b8eb8a67d8246ece6a04bf6344">getRoot</a> ()</td></tr>
-<tr class="separator:a34ace6b8eb8a67d8246ece6a04bf6344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33a62906a5bc78fcac7d4f8748e653e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#ab33a62906a5bc78fcac7d4f8748e653e">getRoot</a> ()</td></tr>
+<tr class="memdesc:ab33a62906a5bc78fcac7d4f8748e653e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of tree root  <a href="class_tree.html#ab33a62906a5bc78fcac7d4f8748e653e">More...</a><br /></td></tr>
+<tr class="separator:ab33a62906a5bc78fcac7d4f8748e653e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f12f0a53b2e76b003bec9d10b62c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a37f12f0a53b2e76b003bec9d10b62c29">setRoot</a> (<a class="el" href="class_node.html">Node</a> *_root)</td></tr>
+<tr class="memdesc:a37f12f0a53b2e76b003bec9d10b62c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter of root  <a href="class_tree.html#a37f12f0a53b2e76b003bec9d10b62c29">More...</a><br /></td></tr>
 <tr class="separator:a37f12f0a53b2e76b003bec9d10b62c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c39cbc4af7fdb831a97530a32ef970b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a1c39cbc4af7fdb831a97530a32ef970b">deleteAllTree</a> (<a class="el" href="class_node.html">Node</a> *t)</td></tr>
-<tr class="separator:a1c39cbc4af7fdb831a97530a32ef970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abca687e26ab7da0bacc7e9398de2e8ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#abca687e26ab7da0bacc7e9398de2e8ee">addRoot</a> (string newval)</td></tr>
-<tr class="separator:abca687e26ab7da0bacc7e9398de2e8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0f4e09e6e52ea10fec53f34b4bba66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#aed0f4e09e6e52ea10fec53f34b4bba66">deleteAllSubTree</a> (<a class="el" href="class_node.html">Node</a> *)</td></tr>
+<tr class="memdesc:aed0f4e09e6e52ea10fec53f34b4bba66"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all nodes in a sub tree  <a href="class_tree.html#aed0f4e09e6e52ea10fec53f34b4bba66">More...</a><br /></td></tr>
+<tr class="separator:aed0f4e09e6e52ea10fec53f34b4bba66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae439632489b646e3a4785b2811a3f5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#ae439632489b646e3a4785b2811a3f5b8">setRoot</a> (string newval)</td></tr>
+<tr class="memdesc:ae439632489b646e3a4785b2811a3f5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets a root by a value  <a href="class_tree.html#ae439632489b646e3a4785b2811a3f5b8">More...</a><br /></td></tr>
+<tr class="separator:ae439632489b646e3a4785b2811a3f5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ad22f72da3721c6693c176ff1af477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#aa2ad22f72da3721c6693c176ff1af477">addSon</a> (string father, string newval)</td></tr>
+<tr class="memdesc:aa2ad22f72da3721c6693c176ff1af477"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a son to a tree  <a href="class_tree.html#aa2ad22f72da3721c6693c176ff1af477">More...</a><br /></td></tr>
 <tr class="separator:aa2ad22f72da3721c6693c176ff1af477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf03b72d3f325b4ba49153b6f2aeba47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#adf03b72d3f325b4ba49153b6f2aeba47">SubTreeSearch</a> (<a class="el" href="class_node.html">Node</a> *p, string val)</td></tr>
+<tr class="memdesc:adf03b72d3f325b4ba49153b6f2aeba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">searches a value in a subtree  <a href="class_tree.html#adf03b72d3f325b4ba49153b6f2aeba47">More...</a><br /></td></tr>
 <tr class="separator:adf03b72d3f325b4ba49153b6f2aeba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade43bb2ac1b55de7d69e2ad32bca2567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#ade43bb2ac1b55de7d69e2ad32bca2567">searchAndPrint</a> (<a class="el" href="class_node.html">Node</a> *p, string val)</td></tr>
-<tr class="separator:ade43bb2ac1b55de7d69e2ad32bca2567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af128319c917bd7c18ef14d42f809cbd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#af128319c917bd7c18ef14d42f809cbd7">searchAndPrint</a> (string val)</td></tr>
-<tr class="separator:af128319c917bd7c18ef14d42f809cbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ebae49348aa77a0082d907b2c3b886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a60ebae49348aa77a0082d907b2c3b886">searchAndPrintArea</a> (string val)</td></tr>
-<tr class="separator:a60ebae49348aa77a0082d907b2c3b886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1a6106f58bbac6aa8187ce826a0edf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#ab1a6106f58bbac6aa8187ce826a0edf8">print</a> (<a class="el" href="class_node.html">Node</a> *p, int level=0)</td></tr>
-<tr class="separator:ab1a6106f58bbac6aa8187ce826a0edf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b3909d5c578261c9b439d01b27ca93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a97b3909d5c578261c9b439d01b27ca93">printToScreenSearch</a> (<a class="el" href="class_node.html">Node</a> *subtree, string val)</td></tr>
+<tr class="memdesc:a97b3909d5c578261c9b439d01b27ca93"><td class="mdescLeft">&#160;</td><td class="mdescRight">search  <a href="class_tree.html#a97b3909d5c578261c9b439d01b27ca93">More...</a><br /></td></tr>
+<tr class="separator:a97b3909d5c578261c9b439d01b27ca93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd955fc90bce7d0299564cb11a16ce5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#acd955fc90bce7d0299564cb11a16ce5a">print</a> (<a class="el" href="class_node.html">Node</a> *p, int level)</td></tr>
+<tr class="memdesc:acd955fc90bce7d0299564cb11a16ce5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints subtree and dpeth level  <a href="class_tree.html#acd955fc90bce7d0299564cb11a16ce5a">More...</a><br /></td></tr>
+<tr class="separator:acd955fc90bce7d0299564cb11a16ce5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610caf5b3f97c888e3c31c4316d21c19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">printAllTree</a> ()</td></tr>
+<tr class="memdesc:a610caf5b3f97c888e3c31c4316d21c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints all the tree  <a href="class_tree.html#a610caf5b3f97c888e3c31c4316d21c19">More...</a><br /></td></tr>
 <tr class="separator:a610caf5b3f97c888e3c31c4316d21c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b17b197c162b703938fce964e523770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a8b17b197c162b703938fce964e523770">printAllLeaves</a> ()</td></tr>
+<tr class="memdesc:a8b17b197c162b703938fce964e523770"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints all the leaves  <a href="class_tree.html#a8b17b197c162b703938fce964e523770">More...</a><br /></td></tr>
 <tr class="separator:a8b17b197c162b703938fce964e523770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa44d0ca1c9309a9a28dc11b31ca8e8d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#aa44d0ca1c9309a9a28dc11b31ca8e8d8">printLeaves</a> (<a class="el" href="class_node.html">Node</a> *t)</td></tr>
-<tr class="separator:aa44d0ca1c9309a9a28dc11b31ca8e8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ceebd7eb990c22d23a4c33c2909b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#a20ceebd7eb990c22d23a4c33c2909b0c">printLeavesNew</a> (<a class="el" href="class_node.html">Node</a> *t)</td></tr>
+<tr class="memdesc:a20ceebd7eb990c22d23a4c33c2909b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints all leaves in the subtree  <a href="class_tree.html#a20ceebd7eb990c22d23a4c33c2909b0c">More...</a><br /></td></tr>
+<tr class="separator:a20ceebd7eb990c22d23a4c33c2909b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa6a2c8e04437042be81e5a9460ee1d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">printLeavesSubtree</a> (string val)</td></tr>
+<tr class="memdesc:aaa6a2c8e04437042be81e5a9460ee1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints all leaves with the specific value  <a href="class_tree.html#aaa6a2c8e04437042be81e5a9460ee1d7">More...</a><br /></td></tr>
 <tr class="separator:aaa6a2c8e04437042be81e5a9460ee1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9963b1916f8b4befebc1949696268a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">deleteSubTree</a> (string val)</td></tr>
+<tr class="memdesc:ac9963b1916f8b4befebc1949696268a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all subtrees with the specific value in the tree  <a href="class_tree.html#ac9963b1916f8b4befebc1949696268a3">More...</a><br /></td></tr>
 <tr class="separator:ac9963b1916f8b4befebc1949696268a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>need to add documentation first. </p>
-<p>class represents a tree with single root and many sons of each node </p>
+<div class="textblock"><p>class represents a tree with single root and many sons of each node </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad376a7c639d857312f5de2ef47482f68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad376a7c639d857312f5de2ef47482f68">&#9670;&nbsp;</a></span>Tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Tree::Tree </td>
@@ -132,11 +138,6 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>c'ctor of tree constructs a tree and root equals to NULL </p>
@@ -148,9 +149,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Tree::~Tree </td>
@@ -159,34 +157,13 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>d'ctor of tree destruct a tree </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abca687e26ab7da0bacc7e9398de2e8ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abca687e26ab7da0bacc7e9398de2e8ee">&#9670;&nbsp;</a></span>addRoot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Tree::addRoot </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>newval</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa2ad22f72da3721c6693c176ff1af477"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2ad22f72da3721c6693c176ff1af477">&#9670;&nbsp;</a></span>addSon()</h2>
 
@@ -213,23 +190,35 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>adds a son to a tree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">father</td><td>the value of the father</td></tr>
+    <tr><td class="paramname">newval</td><td>the new son value</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a1c39cbc4af7fdb831a97530a32ef970b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c39cbc4af7fdb831a97530a32ef970b">&#9670;&nbsp;</a></span>deleteAllTree()</h2>
+<a id="aed0f4e09e6e52ea10fec53f34b4bba66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0f4e09e6e52ea10fec53f34b4bba66">&#9670;&nbsp;</a></span>deleteAllSubTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Tree::deleteAllTree </td>
+          <td class="memname">void Tree::deleteAllSubTree </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_node.html">Node</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>subRoot</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>deletes all nodes in a sub tree </p>
+<p>a subtree node</p>
 
 </div>
 </div>
@@ -238,9 +227,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Tree::deleteSubTree </td>
@@ -250,42 +236,40 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>deletes all subtrees with the specific value in the tree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>a value</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a34ace6b8eb8a67d8246ece6a04bf6344"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ace6b8eb8a67d8246ece6a04bf6344">&#9670;&nbsp;</a></span>getRoot()</h2>
+<a id="ab33a62906a5bc78fcac7d4f8748e653e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33a62906a5bc78fcac7d4f8748e653e">&#9670;&nbsp;</a></span>getRoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_node.html">Node</a>* Tree::getRoot </td>
+          <td class="memname"><a class="el" href="class_node.html">Node</a> * Tree::getRoot </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>getter of tree root </p>
+<dl class="section return"><dt>Returns</dt><dd>a root node </dd></dl>
 
 </div>
 </div>
-<a id="ab1a6106f58bbac6aa8187ce826a0edf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1a6106f58bbac6aa8187ce826a0edf8">&#9670;&nbsp;</a></span>print()</h2>
+<a id="acd955fc90bce7d0299564cb11a16ce5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd955fc90bce7d0299564cb11a16ce5a">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,7 +284,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -310,6 +294,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>prints subtree and dpeth level </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>a subtree node</td></tr>
+    <tr><td class="paramname">level</td><td>a depth level</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8b17b197c162b703938fce964e523770"></a>
@@ -317,9 +310,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Tree::printAllLeaves </td>
@@ -328,12 +318,9 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>prints all the leaves </p>
 
 </div>
 </div>
@@ -342,9 +329,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Tree::printAllTree </td>
@@ -353,23 +337,20 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>prints all the tree </p>
 
 </div>
 </div>
-<a id="aa44d0ca1c9309a9a28dc11b31ca8e8d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa44d0ca1c9309a9a28dc11b31ca8e8d8">&#9670;&nbsp;</a></span>printLeaves()</h2>
+<a id="a20ceebd7eb990c22d23a4c33c2909b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ceebd7eb990c22d23a4c33c2909b0c">&#9670;&nbsp;</a></span>printLeavesNew()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Tree::printLeaves </td>
+          <td class="memname">void Tree::printLeavesNew </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_node.html">Node</a> *&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -378,6 +359,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>prints all leaves in the subtree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>a subtree</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aaa6a2c8e04437042be81e5a9460ee1d7"></a>
@@ -385,9 +374,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Tree::printLeavesSubtree </td>
@@ -397,26 +383,29 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>prints all leaves with the specific value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>a value</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ade43bb2ac1b55de7d69e2ad32bca2567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade43bb2ac1b55de7d69e2ad32bca2567">&#9670;&nbsp;</a></span>searchAndPrint() <span class="overload">[1/2]</span></h2>
+<a id="a97b3909d5c578261c9b439d01b27ca93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b3909d5c578261c9b439d01b27ca93">&#9670;&nbsp;</a></span>printToScreenSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Tree::searchAndPrint </td>
+          <td class="memname">bool Tree::printToScreenSearch </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_node.html">Node</a> *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramname"><em>subtree</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -432,68 +421,23 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="af128319c917bd7c18ef14d42f809cbd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af128319c917bd7c18ef14d42f809cbd7">&#9670;&nbsp;</a></span>searchAndPrint() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Tree::searchAndPrint </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60ebae49348aa77a0082d907b2c3b886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ebae49348aa77a0082d907b2c3b886">&#9670;&nbsp;</a></span>searchAndPrintArea()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Tree::searchAndPrintArea </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>search </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subtree</td><td>a sub tree</td></tr>
+    <tr><td class="paramname">val</td><td>a value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if value was not found then false otherwise true</dd></dl>
 
 </div>
 </div>
 <a id="a37f12f0a53b2e76b003bec9d10b62c29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37f12f0a53b2e76b003bec9d10b62c29">&#9670;&nbsp;</a></span>setRoot()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f12f0a53b2e76b003bec9d10b62c29">&#9670;&nbsp;</a></span>setRoot() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Tree::setRoot </td>
@@ -503,12 +447,41 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>setter of root </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_root</td><td>a new root node </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae439632489b646e3a4785b2811a3f5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae439632489b646e3a4785b2811a3f5b8">&#9670;&nbsp;</a></span>setRoot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tree::setRoot </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>newval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets a root by a value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newval</td><td>a value</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -537,6 +510,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>searches a value in a subtree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>a subtree node</td></tr>
+    <tr><td class="paramname">val</td><td>a value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the sub subtree with the specific value</dd></dl>
 
 </div>
 </div>

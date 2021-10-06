@@ -62,15 +62,160 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Node Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_tree_8h_source.html">Tree.h</a>&gt;</code></p>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_tree_8h_source.html">Tree.h</a></li>
+<p>class reprsents a node that points to zero to many other nodes  
+ <a href="class_node.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_node_8h_source.html">Node.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1b83dc8df1559ea9363dbe35e3c4eb2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a1b83dc8df1559ea9363dbe35e3c4eb2c">Node</a> (string v)</td></tr>
+<tr class="memdesc:a1b83dc8df1559ea9363dbe35e3c4eb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs a leaf node by only value  <a href="class_node.html#a1b83dc8df1559ea9363dbe35e3c4eb2c">More...</a><br /></td></tr>
+<tr class="separator:a1b83dc8df1559ea9363dbe35e3c4eb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ecd62d3be2690af1feea7d3a8e1616"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ab9ecd62d3be2690af1feea7d3a8e1616">getValue</a> ()</td></tr>
+<tr class="separator:ab9ecd62d3be2690af1feea7d3a8e1616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115b864f3f4fdc4d1ea45a5b61eabf59"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a115b864f3f4fdc4d1ea45a5b61eabf59">getSonsList</a> ()</td></tr>
+<tr class="memdesc:a115b864f3f4fdc4d1ea45a5b61eabf59"><td class="mdescLeft">&#160;</td><td class="mdescRight">node's sons getter  <a href="class_node.html#a115b864f3f4fdc4d1ea45a5b61eabf59">More...</a><br /></td></tr>
+<tr class="separator:a115b864f3f4fdc4d1ea45a5b61eabf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eead699f575714147d0aced4bac8a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a3eead699f575714147d0aced4bac8a0e">addSonValue</a> (string _value)</td></tr>
+<tr class="memdesc:a3eead699f575714147d0aced4bac8a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a new son to node with a value  <a href="class_node.html#a3eead699f575714147d0aced4bac8a0e">More...</a><br /></td></tr>
+<tr class="separator:a3eead699f575714147d0aced4bac8a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82150618e9cc5165095752424ffb1c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ad82150618e9cc5165095752424ffb1c8">addSon</a> (<a class="el" href="class_node.html">Node</a> *_node)</td></tr>
+<tr class="memdesc:ad82150618e9cc5165095752424ffb1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a new son to a node  <a href="class_node.html#ad82150618e9cc5165095752424ffb1c8">More...</a><br /></td></tr>
+<tr class="separator:ad82150618e9cc5165095752424ffb1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>class reprsents a node that points to zero to many other nodes </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1b83dc8df1559ea9363dbe35e3c4eb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b83dc8df1559ea9363dbe35e3c4eb2c">&#9670;&nbsp;</a></span>Node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node::Node </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructs a leaf node by only value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>a string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad82150618e9cc5165095752424ffb1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82150618e9cc5165095752424ffb1c8">&#9670;&nbsp;</a></span>addSon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::addSon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adds a new son to a node </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_node</td><td>a pointer node</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3eead699f575714147d0aced4bac8a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eead699f575714147d0aced4bac8a0e">&#9670;&nbsp;</a></span>addSonValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::addSonValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adds a new son to node with a value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_value</td><td>a value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a115b864f3f4fdc4d1ea45a5b61eabf59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115b864f3f4fdc4d1ea45a5b61eabf59">&#9670;&nbsp;</a></span>getSonsList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt; <a class="el" href="class_node.html">Node</a> * &gt; Node::getSonsList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>node's sons getter </p>
+<dl class="section return"><dt>Returns</dt><dd>a list of pointer of sons nodes</dd></dl>
+
+</div>
+</div>
+<a id="ab9ecd62d3be2690af1feea7d3a8e1616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ecd62d3be2690af1feea7d3a8e1616">&#9670;&nbsp;</a></span>getValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Node::getValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+<dl class="section return"><dt>Returns</dt><dd>a string of value of node </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_node_8h_source.html">Node.h</a></li>
+<li><a class="el" href="_node_8cpp.html">Node.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
